@@ -1,0 +1,33 @@
+title: Netkraken Go Vanity Imports
+description: Vanity import paths for Netkraken Go modules at <b>go.netkraken.com</b>
+email: support@netkraken.com
+
+url: "https://go.netkraken.com"
+baseurl: ""
+
+github:
+  is_project_page: true
+  repository_url: https://github.com/netkrakenhq/go-vanity-imports
+  repository_name: go-vanity-imports
+  owner_url: "mailto:support@netkraken.com"
+  owner_name: "support@netkraken.com"
+
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+
+sass:
+  silence_deprecations:
+    - import
+    - global-builtin
+
+exclude:
+  - .idea/
+  - .vscode/
+  - .jekyll-cache/
+  - vendor/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+
