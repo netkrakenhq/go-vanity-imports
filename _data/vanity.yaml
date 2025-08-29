@@ -1,0 +1,19 @@
+host: go.netkraken.com
+
+paths:
+  /tentacle:
+    repo: https://github.com/netkrakenhq/go-tentacle
+    vcs: git
+    branch: main
+    source: github.com
+
+sources:
+  "~^(github|github.com)$":
+    home: https://github.com/%{slug}
+    dir:  https://github.com/%{slug}/tree/%{branch}{/dir}
+    file: https://github.com/%{slug}/blob/%{branch}{/dir}/{file}#L{line}
+
+  gitlab.com:
+    home: https://gitlab.com/%{slug}
+    dir:  https://gitlab.com/%{slug}/-/tree/%{branch}{/dir}
+    file: https://gitlab.com/%{slug}/-/blob/%{branch}{/dir}/{file}#L{line}

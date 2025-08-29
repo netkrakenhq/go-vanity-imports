@@ -1,0 +1,25 @@
+# {{ prefix }}
+
+**Usage:**
+```bash
+go get {{ prefix }}@latest
+```
+
+```go
+import "{{ prefix }}"
+```
+
+**Home:**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<https://pkg.go.dev/{{ prefix }}>
+
+**Source:**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<{{ repo }}>
+
+**Metadata:**
+> <pre style="white-space: pre-wrap;">
+> {{ page["custom_meta"]["go-import"] }}
+{%- if page.custom_meta["go-source"] %}
+> ---
+> {{ page["custom_meta"]["go-source"] }}
+> </pre>
+{%- endif %}
