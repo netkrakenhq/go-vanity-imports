@@ -7,6 +7,9 @@ paths:
     branch: main
     source: github.com
 
+  /meridian:
+    repo: https://github.com/netkrakenhq/meridian
+
 sources:
   "~^(github|github.com)$":
     home: https://github.com/%{slug}
